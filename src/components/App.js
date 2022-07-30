@@ -1,26 +1,18 @@
 
 import React from "react"
-import { Form , Button, Card} from 'react-bootstrap'
+import Signup from "./Signup";
+import Container from "react-bootstrap/esm/Container";
+
 
 function App() {
   return (
-  <>
-    <Card>
-      <Card.Body>
-        <h2 className="text-center mb-4"> sign up </h2>
-        <Form>
-          <Form.Group id="email">Email</Form.Group>
-        </Form>
-      </Card.Body>
-
-    </Card>
-    <div className=" w-100 text-center mt-2">
-      Already have a account? Log in
-
-
-    </div>
-
-  </>
+    <Container className = "d-flex align-items-center justify-content-center"
+    style={{minHeight: "100vh"}}
+    >
+      <div className="w-100" style={{maxWidth: "400px"}}>
+        <Signup/>
+      </div>
+    </Container>
 
   )
     
