@@ -8,6 +8,7 @@ import {Link, useNavigate} from "react-router-dom"
 import Homepage from "./Homepage"
 import Login from "./Login"
 import { useState } from "react";
+import PrivateRoute from "./PrivateRoute";
 
 
 
@@ -26,16 +27,14 @@ function App() {
       >
         <div className="w-100" style={{maxWidth: "400px"}}>
           <Router>
-            <nav>
-            <Link to="/login"> Logout </Link>
-            <Link to="/ResumeBuilder"> ResumeBuilder </Link>
 
-
-            </nav>
+          
             <AuthProvider>
               <Routes>
-                <Route path ="/" element = {<Signup/>}/>
-                <Route path ="/Homepage" element= {<Homepage/>}/>
+                <Route element={<PrivateRoute />}>
+                  <Route path="/" element={<Homepage />} />
+                </Route>
+                <Route path ="/signup" element= {<Signup/>}/>
                 <Route path ="/login" element = {<Login/>}/>
               </Routes>
             </AuthProvider>

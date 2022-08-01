@@ -21,7 +21,7 @@ export default function Login() {
             setError("")
             setLoading(true)
             await login(emailRef.current.value, passwordRef.current.value)
-            history("/Homepage")
+            history("/")
             
             
             
@@ -60,7 +60,7 @@ export default function Login() {
 
         </Card>
         <div className=" w-100 text-center mt-2">
-        Need a account? sign up? <Link to="/">Sign up</Link>
+        Need a account? sign up? <Link to="/signup">Sign up</Link>
         </div>
     </>
   )

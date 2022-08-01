@@ -62,7 +62,7 @@ export default function Signup() {
 
         </Card>
         <div className=" w-100 text-center mt-2">
-        Already have a account? <Link to="/Login">Login</Link>
+        Already have a account? <Link to="/login">Login</Link>
         </div>
     </>
   )
