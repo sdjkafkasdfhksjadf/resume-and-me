@@ -1,11 +1,25 @@
-import React from 'react'
-import {Link,useNavigate} from "react-router-dom"
+import React from 'react';
+import "../components/Homepage.css"
+import {Link} from "react-router-dom"
+
+
+const linkStyle = {
+  margin: "1rem",
+  textDecoration: "none",
+  color: 'white'
+  
+};
+
 export default function Homepage() {
 
   return (
-    <div className=" w-100 text-center mt-2">
-      <Link to="/ResumeBuilder">Build Resume</Link>
-      <Link to="/ResumeDisplay">ResumeDisplay</Link>
+    <div>
+      <h1>Welcome to Resume and Me </h1>
+      <div class = "div1" >
+        
+        <button class = "one"><Link to="/ResumeBuilder" style={linkStyle}>Build Resume</Link></button>
+        <button class = "two"><Link to="/GetData" style={linkStyle}>GetData</Link></button>
+      </div>
     </div>
   )
 }

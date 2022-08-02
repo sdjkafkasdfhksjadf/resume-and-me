@@ -9,7 +9,7 @@ import "./app.css";
 import Homepage from "./Homepage"
 import Login from "./Login"
 import Contact from "./Contact"
-import OldResume from "./OldResume"
+import GetData from "./GetData";
 import ResumeDisplay from "./ResumeDisplay"
 import PrivateRoute from "./PrivateRoute";
 import ResumeBuilder from "./ResumeBuilder";
@@ -44,7 +44,7 @@ function App() {
                     <Nav>
                       <Nav.Link href = "/Homepage">Homepage</Nav.Link>
                       <Nav.Link href = "/">Profile</Nav.Link>
-                      <Nav.Link href = "/OldResume">Old Resume</Nav.Link>
+                      <Nav.Link href = "/ResumeDisplay">Resumes</Nav.Link>
                       <Nav.Link href = "/Contact">Contact</Nav.Link>
                       
                     </Nav>
@@ -56,9 +56,9 @@ function App() {
                   <Route path ="/" element={<ProfilePage />} />
                   <Route path ="/resumebuilder" element = {<ResumeBuilder/>}/>
                   <Route path = "/Contact" element = {<Contact/>}/>
-                  <Route path = "/OldResume" element = {<OldResume/>}/>
                   <Route path = "/Homepage" element = {<Homepage/>}/>
                   <Route path = "/ResumeDisplay" element = {<ResumeDisplay/>}/>
+                  <Route path = "/GetData" element = {<GetData/>}/>
                   
                 </Route>
                 <Route path ="/signup" element= {<Signup/>}/>

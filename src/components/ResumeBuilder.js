@@ -1,6 +1,6 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { addDoc, collection } from "firebase/firestore";
-import { db, auth } from "../firebase";
+import { db } from "../firebase";
 import { useNavigate } from "react-router-dom";
 
 function CreatePost() {
@@ -22,17 +22,18 @@ function CreatePost() {
       number,
       proSumm
     });
+    navigate("/ResumeDisplay");
     
   };
 
   
   
   return (
-    <div className="createPostPage">
-      <div className="cpContainer">
+    <div className="resumeBuildPage">
+      <div className="resumeBuildContainer">
         <h1>Create a resume header</h1>
 
-        <div className="inputGp">
+        <div className="question">
           <label> Name:</label>
           <input
              placeholder="Name..."
@@ -42,7 +43,7 @@ function CreatePost() {
           />
         </div>
 
-        <div className="inputGp">
+        <div className="question">
           <label> Adress:</label>
           <input
              placeholder="Adress..."
@@ -52,7 +53,7 @@ function CreatePost() {
           />
         </div>
 
-        <div className="inputGp">
+        <div className="question">
           <label> Email:</label>
           <input
              placeholder="Email..."
@@ -62,7 +63,7 @@ function CreatePost() {
           />
         </div>
 
-        <div className="inputGp">
+        <div className="question">
           <label> Number:</label>
           <input
              placeholder="Number..."
@@ -78,7 +79,7 @@ function CreatePost() {
 
 
 
-        <div className="inputGp">
+        <div className="question">
           <label> Professional summary:</label>
           <textarea
             placeholder="Professional summary:..."
