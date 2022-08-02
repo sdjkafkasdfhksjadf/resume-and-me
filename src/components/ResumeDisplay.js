@@ -23,12 +23,15 @@ function ResumeDisplay({ isAuth }) {
             <div className="postHeader">
               <div className="title">
                 <h1 className="FullName"> {ResumeHeaderInfo.name}</h1>
-                {ResumeHeaderInfo.adress} 
-                {ResumeHeaderInfo.email} 
-                {ResumeHeaderInfo.number} 
+                {ResumeHeaderInfo.adress}
+                {" "}
+                {ResumeHeaderInfo.email}
+                {" "}
+                {ResumeHeaderInfo.number}
               </div>
+
             </div>
-            <h4 className="test">Professional summary</h4>
+            <h1 className="test">Professional summary </h1>
             <div className="postTextContainer"> {ResumeHeaderInfo.proSumm} </div>
           </div>
         );

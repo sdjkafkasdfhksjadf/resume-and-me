@@ -93,13 +93,12 @@
   }
 
   .FullName{
-
-
     
     border-bottom: 2px solid black;
   }
   .test{
-    border-bottom: 5px solid red;
+    border-bottom: 5px  solid black;
+    
   }
   
   

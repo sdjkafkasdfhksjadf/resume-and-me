@@ -10,7 +10,7 @@ import Homepage from "./Homepage"
 import Login from "./Login"
 import Contact from "./Contact"
 import OldResume from "./OldResume"
-
+import ResumeDisplay from "./ResumeDisplay"
 import PrivateRoute from "./PrivateRoute";
 import ResumeBuilder from "./ResumeBuilder";
 
@@ -58,6 +58,7 @@ function App() {
                   <Route path = "/Contact" element = {<Contact/>}/>
                   <Route path = "/OldResume" element = {<OldResume/>}/>
                   <Route path = "/Homepage" element = {<Homepage/>}/>
+                  <Route path = "/ResumeDisplay" element = {<ResumeDisplay/>}/>
                   
                 </Route>
                 <Route path ="/signup" element= {<Signup/>}/>

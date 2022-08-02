@@ -12,13 +12,12 @@ import { getFirestore } from 'firebase/firestore'
 // Your web app's Firebase configuration
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const app = firebase.initializeApp({
-  apiKey: "AIzaSyAIFj5KG9kmPGsMliIDIKxlWCy_MdAW794",
-  authDomain: "resume-and-me.firebaseapp.com",
-  projectId: "resume-and-me",
-  storageBucket: "resume-and-me.appspot.com",
-  messagingSenderId: "204907129601",
-  appId: "1:204907129601:web:5517b96a5327d53fcd0900",
-  measurementId: "G-49DNKNFCWX"
+  apiKey: "AIzaSyCz9mXZrytY3u2uBpX9vjvGj5GAxfMYXJQ",
+  authDomain: "resume-test-13c31.firebaseapp.com",
+  projectId: "resume-test-13c31",
+  storageBucket: "resume-test-13c31.appspot.com",
+  messagingSenderId: "860285641437",
+  appId: "1:860285641437:web:033b11c901e52095583134"
 });
 
 
