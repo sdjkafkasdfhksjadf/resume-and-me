@@ -21,7 +21,7 @@ export default function Login() {
             setError("")
             setLoading(true)
             await login(emailRef.current.value, passwordRef.current.value)
-            history("/")
+            history("/Homepage")
             
             
             
@@ -52,7 +52,7 @@ export default function Login() {
 
                 
 
-                <Button disabled={loading} className="w-100" type = "submit">
+                <Button disabled={loading} className="w-100 " type = "submit">
                     Log In
                 </Button>
             </Form>

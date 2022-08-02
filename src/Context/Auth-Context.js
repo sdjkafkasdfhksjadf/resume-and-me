@@ -22,7 +22,7 @@ export function AuthProvider({children}) {
     }
 
     function logout(email, password){
-      return auth.signOut()
+      return auth.signOut(auth)
     }
 
     useEffect(() =>{
