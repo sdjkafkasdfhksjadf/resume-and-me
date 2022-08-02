@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
-import { getDocs, collection, deleteDoc, doc } from "firebase/firestore";
-import { auth, db } from "../firebase";
+import { getDocs, collection } from "firebase/firestore";
+import {  db } from "../firebase";
 
 
 function ResumeDisplay({ isAuth }) {
@@ -19,8 +19,8 @@ function ResumeDisplay({ isAuth }) {
     <div className="homePage">
       {resumeLists.map((ResumeHeaderInfo) => {
         return (
-          <div className="post">
-            <div className="postHeader">
+          <div className="resume">
+            <div className="resumeHeader">
               <div className="title">
                 <h1 className="FullName"> {ResumeHeaderInfo.name}</h1>
                 {ResumeHeaderInfo.adress}
@@ -31,8 +31,8 @@ function ResumeDisplay({ isAuth }) {
               </div>
 
             </div>
-            <h1 className="test">Professional summary </h1>
-            <div className="postTextContainer"> {ResumeHeaderInfo.proSumm} </div>
+            <h1 className="proSum">Professional summary </h1>
+            <div className="proSumTextContainer"> {ResumeHeaderInfo.proSumm} </div>
           </div>
         );
       })}

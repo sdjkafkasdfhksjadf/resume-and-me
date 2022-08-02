@@ -1,7 +1,7 @@
 
 import React, {useState} from 'react'
 import { Button,Card,Alert } from 'react-bootstrap'
-import {Link, useNavigate} from "react-router-dom"
+import {useNavigate} from "react-router-dom"
 import { useAuth } from "../Context/Auth-Context"
 
 export default function Homepage() {
@@ -21,17 +21,17 @@ export default function Homepage() {
       setError("Failed to log out")
     }
   }
+
+ 
   return (
     <>
 
      <Card>
         <Card.Body>
-        <h2 className="text-center mb-4">Profile</h2>
-        {error && <Alert variant="danger">{error}</Alert>}
-        <strong>Email:</strong> {currentUser.email}
-        <div className="w-100 text-center mt-2 btn btn-light ">
-        <Button variant="link" onClick={handleLogout}>Log Out</Button>
-      </div>
+          <h2 className="text-center mb-4">Profile</h2>
+          {error && <Alert variant="danger">{error}</Alert>}
+          <strong>Email:</strong> {currentUser.email}
+          <div className="w-100 text-center mt-2 btn btn-light "><Button variant="link" onClick={handleLogout}>Log Out</Button></div>
         </Card.Body>
       </Card>
       
