@@ -43,17 +43,16 @@ function App() {
                   <NavBar.Brand hfref= "Navibar">Resume and Me</NavBar.Brand>
                     <Nav>
                       <Nav.Link href = "/Homepage">Homepage</Nav.Link>
-                      <Nav.Link href = "/">Profile</Nav.Link>
+                      <Nav.Link href = "/ProfilePage">Profile</Nav.Link>
                       <Nav.Link href = "/ResumeDisplay">Resumes</Nav.Link>
                       <Nav.Link href = "/Contact">Contact</Nav.Link>
-                      
-                    </Nav>
+y                    </Nav>
                 </Container>
               </NavBar>
           
               <Routes>
                 <Route element={<PrivateRoute />}>
-                  <Route path ="/" element={<ProfilePage />} />
+                  <Route path ="/ProfilePage" element ={<ProfilePage />} />
                   <Route path ="/resumebuilder" element = {<ResumeBuilder/>}/>
                   <Route path = "/Contact" element = {<Contact/>}/>
                   <Route path = "/Homepage" element = {<Homepage/>}/>
@@ -62,7 +61,7 @@ function App() {
                   
                 </Route>
                 <Route path ="/signup" element= {<Signup/>}/>
-                <Route path ="/login" element = {<Login/>}/>
+                <Route path ="/" element = {<Login/>}/>
                 
                 
               </Routes>
