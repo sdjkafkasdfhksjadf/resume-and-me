@@ -1,0 +1,114 @@
+.resumeBuildPage {
+    width: 100%;
+    height: calc(100vh - 80px);
+    display: grid;
+    place-items: center;
+  }
+  
+  .resumeBuildContainer {
+    width: 500px;
+    height: auto;
+    padding: 20px;
+    background-color: black;
+    border-radius: 12px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .resumeBuildContainer h1 {
+    text-align: center;
+  }
+  
+  .resumeBuildContainer label {
+    font-size: 20px;
+  }
+  .resumeBuildContainer .question {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .question input,
+  .question textarea {
+    font-size: 18px;
+    border: none;
+    border-radius: 2px;
+    padding: 5px;
+  }
+  
+  .question input {
+    height: 40px;
+  }
+  .question textarea {
+    height: 150px;
+  }
+  
+  .resumeBuildContainer button {
+    margin-top: 20px;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+  }
+
+
+  .homePage {
+    width: 100%;
+    min-height: calc(100vh - 80px);
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 50px;
+    
+    
+  }
+  
+  .homePage .resume {
+    width: 600px;
+    height: auto;
+    max-height: 600px;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 15px;
+    
+  }
+  
+  .resume .resumeHeader {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    
+    
+  }
+  
+  .resumeHeader .title {
+    flex: 50%;
+    
+  }
+
+  .FullName{
+    
+    border-bottom: 2px solid black;
+  }
+  .proSum{
+    border-bottom: 2px  solid black;
+    
+  }
+  
+  
+
+ 
+  .resume .proSumTextContainer {
+    word-wrap: break-word;
+    height: auto;
+    max-height: 400px;
+    width: 100%;
+    overflow: hidden;
+    overflow-y: auto;
+    
+  }

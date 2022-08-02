@@ -1,0 +1,28 @@
+.div1 {
+    width: 700px;
+    position : relative; 
+    display: block;
+    margin : auto;
+        
+}
+.one{
+    margin-top: 20px;
+    margin-right: 10px;
+    text-align: center;
+    background-color:dodgerblue;
+    color: white;
+    height: 100px;
+    width: 200px;
+
+}
+.two{
+    margin-left: 10px;
+    background-color: tomato;
+    color: white;
+    height: 100px;
+    width: 200px;
+}
+
+h1{
+   text-align: center;
+}
