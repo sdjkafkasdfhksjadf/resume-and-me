@@ -16,7 +16,7 @@ export default function Homepage() {
 
     try {
       await logout()
-      history("/login")
+      history("/")
     } catch {
       setError("Failed to log out")
     }

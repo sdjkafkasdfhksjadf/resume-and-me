@@ -10,7 +10,7 @@ const PrivateRoute = () => {
 
     useEffect(() => {
         if(!currentUser) {
-            navigate('/login', {replace: true})
+            navigate('/', {replace: true})
         }
     }, [])
 
