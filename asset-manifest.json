@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/sdjkafkasdfhksjadf/resume-and-me/static/css/main.b24f6c5f.css",
+    "main.js": "/sdjkafkasdfhksjadf/resume-and-me/static/js/main.4ee57d07.js",
+    "index.html": "/sdjkafkasdfhksjadf/resume-and-me/index.html",
+    "main.b24f6c5f.css.map": "/sdjkafkasdfhksjadf/resume-and-me/static/css/main.b24f6c5f.css.map",
+    "main.4ee57d07.js.map": "/sdjkafkasdfhksjadf/resume-and-me/static/js/main.4ee57d07.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b24f6c5f.css",
+    "static/js/main.4ee57d07.js"
+  ]
+}
