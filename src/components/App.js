@@ -52,7 +52,7 @@ y                    </Nav>
           
               <Routes>
                 <Route element={<PrivateRoute />}>
-                  <Route path ="/ProfilePage" element={<ProfilePage />} />
+                  <Route path ="/ProfilePage" element ={<ProfilePage />} />
                   <Route path ="/resumebuilder" element = {<ResumeBuilder/>}/>
                   <Route path = "/Contact" element = {<Contact/>}/>
                   <Route path = "/Homepage" element = {<Homepage/>}/>
