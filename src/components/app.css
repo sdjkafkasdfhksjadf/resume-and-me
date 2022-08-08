@@ -103,6 +103,12 @@
     font-size: 18px; 
     flex: 50%; 
   }
+
+  body{
+    background-image: url("./imgs/trees.png");
+    background-position: bottom;
+    background-repeat: repeat-x;
+  }
   
 
  

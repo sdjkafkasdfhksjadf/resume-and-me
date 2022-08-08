@@ -1,6 +1,10 @@
 import React from 'react'
+import { Outlet, useNavigate } from 'react-router-dom'
+
+
 
 class Contact extends React.Component {
+  
   constructor(props) {
     super(props);
     this.state = {
@@ -8,7 +12,12 @@ class Contact extends React.Component {
       email: '',
       message: ''
     }
+
+    
+
+
   }
+  
   render() {
     return(
       <div className="Contact">
@@ -44,6 +53,7 @@ class Contact extends React.Component {
   }
 
   handleSubmit(event) {
+     
   }
 }
 
