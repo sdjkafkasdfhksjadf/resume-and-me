@@ -86,10 +86,7 @@
     
   }
   
-  .resumeHeader .title {
-    flex: 50%;
-    
-  }
+
 
   .FullName{
     
@@ -98,8 +95,14 @@
   .proSum{
     border-bottom: 2px  solid black;
     
+    
   }
   
+  .title{
+    border-bottom: 2px  solid black;
+    font-size: 18px; 
+    flex: 50%; 
+  }
   
 
  
