@@ -5,51 +5,95 @@ import { useNavigate } from "react-router-dom";
 
 function CreatePost() {
 
-  const [company, setCompany] = useState("");
-  const [jobTitle, setJobTitle] = useState("");
+  const [number, setNumber] = useState("");
+  const [proSumm, setProSumm] = useState("");
+  const [name, setName] = useState("");
+  const [adress, setAdress] = useState("");
+  const [email, setEmail] = useState("");
 
-  const postsCollectionRef = collection(db, "DataSearchInfo");
+  const postsCollectionRef = collection(db, "ResumeHeaderInfo");
   let navigate = useNavigate();
 
   const createPost = async () => {
     await addDoc(postsCollectionRef, {
-      company,
-      jobTitle
+      name,
+      adress,
+      email,
+      number,
+      proSumm
     });
+    navigate("/ResumeDisplay");
     
   };
 
   
   
   return (
-    <div className="dataSearchPage">
-      <div className="dataSearchContainer">
-        <h1>Search for Job Statistics</h1>
+    <div className="resumeBuildPage">
+      <div className="resumeBuildContainer">
+        <h1>Create a resume header</h1>
 
         <div className="question">
-          <label> Company:</label>
+          <label> Name:</label>
           <input
-             placeholder="Company..."
+             placeholder="Name..."
              onChange={(event) => {
-               setCompany(event.target.value);
+               setName(event.target.value);
              }}
           />
         </div>
 
         <div className="question">
-          <label>Job Title:</label>
+          <label> Adress:</label>
           <input
-             placeholder="Job title..."
+             placeholder="Adress..."
              onChange={(event) => {
-               setJobTitle(event.target.value);
+               setAdress(event.target.value);
              }}
           />
         </div>
+
+        <div className="question">
+          <label> Email:</label>
+          <input
+             placeholder="Email..."
+             onChange={(event) => {
+               setEmail(event.target.value);
+             }}
+          />
+        </div>
+
+        <div className="question">
+          <label> Number:</label>
+          <input
+             placeholder="Number..."
+             onChange={(event) => {
+               setNumber(event.target.value);
+             }}
+          />
+        </div>
+
+
+        
+
+
+
+
+        <div className="question">
+          <label> Professional summary:</label>
+          <textarea
+            placeholder="Professional summary:..."
+            onChange={(event) => {
+              setProSumm(event.target.value);
+            }}
+
+            
+          />
         </div>
         <button onClick={createPost}> Submit Post</button>
         
       </div>
-    
+    </div>
   );
 }
 
