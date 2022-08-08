@@ -46,7 +46,7 @@ function App() {
                       <Nav.Link href = "/ProfilePage">Profile</Nav.Link>
                       <Nav.Link href = "/ResumeDisplay">Resumes</Nav.Link>
                       <Nav.Link href = "/Contact">Contact</Nav.Link>
-y                    </Nav>
+                    </Nav>
                 </Container>
               </NavBar>
           

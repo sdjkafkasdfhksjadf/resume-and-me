@@ -1,15 +1,18 @@
 import React, { useState } from "react";
 import { addDoc, collection } from "firebase/firestore";
-import { db } from "../firebase";
+import { db, auth } from "../firebase";
 import { useNavigate } from "react-router-dom";
 
 function CreatePost() {
 
+  
   const [number, setNumber] = useState("");
   const [proSumm, setProSumm] = useState("");
   const [name, setName] = useState("");
   const [adress, setAdress] = useState("");
   const [email, setEmail] = useState("");
+
+  
 
   const postsCollectionRef = collection(db, "ResumeHeaderInfo");
   let navigate = useNavigate();
@@ -20,7 +23,8 @@ function CreatePost() {
       adress,
       email,
       number,
-      proSumm
+      proSumm,
+      author: { id: auth.currentUser.uid }
     });
     navigate("/ResumeDisplay");
     
@@ -29,6 +33,7 @@ function CreatePost() {
   
   
   return (
+    
     <div className="resumeBuildPage">
       <div className="resumeBuildContainer">
         <h1>Create a resume header</h1>
@@ -93,7 +98,7 @@ function CreatePost() {
         <button onClick={createPost}> Submit Post</button>
         
       </div>
-    </div>
+    </div> 
   );
 }
 
