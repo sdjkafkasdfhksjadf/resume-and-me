@@ -1,11 +1,11 @@
-.resumeBuildPage {
+.resumeBuildPage, .dataSearchPage {
     width: 100%;
     height: calc(100vh - 80px);
     display: grid;
     place-items: center;
   }
   
-  .resumeBuildContainer {
+  .resumeBuildContainer, .dataSearchContainer {
     width: 500px;
     height: auto;
     padding: 20px;
@@ -16,14 +16,14 @@
     flex-direction: column;
   }
   
-  .resumeBuildContainer h1 {
+  .resumeBuildContainer h1, .dataSearchContainer h1 {
     text-align: center;
   }
   
-  .resumeBuildContainer label {
+  .resumeBuildContainer label, .dataSearchContainer label {
     font-size: 20px;
   }
-  .resumeBuildContainer .question {
+  .question {
     margin-top: 30px;
     display: flex;
     flex-direction: column;
@@ -44,7 +44,7 @@
     height: 150px;
   }
   
-  .resumeBuildContainer button {
+  .resumeBuildContainer button, .dataSearchContainer button {
     margin-top: 20px;
     height: 40px;
     border: none;
