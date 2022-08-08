@@ -21,6 +21,8 @@ import ProfilePage from "./ProfilePage"
 
 function App() {
 
+  console.log("test")
+
 
 
 
