@@ -1,11 +1,11 @@
 import React, { useEffect, useState } from "react";
 import { getDocs, collection, doc } from "firebase/firestore";
-import { db, auth } from "../firebase";
+import { db, auth } from "../../firebase";
 
 
 function ResumeDisplay({ isAuth }) {
   const [resumeLists, setResumeList] = useState([]);
-  const resumeCollectionRef = collection(db, "ResumeHeaderInfo");
+  const resumeCollectionRef = collection(db, "BasicTemplate");
   
 
 
@@ -72,7 +72,7 @@ function ResumeDisplay({ isAuth }) {
                 <div>{ResumeHeaderInfo.timeWorked2}</div>
                 <div>{ResumeHeaderInfo.description2}</div>
               </div>
-              <h1 >Attributes</h1>
+              <h1 >Skills</h1>
 
               <div className="proSum">
                 <div>{ResumeHeaderInfo.skil1} </div>

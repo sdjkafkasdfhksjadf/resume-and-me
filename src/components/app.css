@@ -1,132 +1,132 @@
 .resumeBuildPage {
-    width: 100%;
-    height: calc(100vh - 80px);
-    display: flex;
-    place-items: center;
-  }
+  width: 100%;
+  height: calc(100vh - 80px);
+  align-items:center;
+  display:flex;
+  margin-left: -90%;
+}
+
+.resumeBuildContainer {
+  width: auto;
+  height: 750px;
+  padding: 20px;
+  background-color: black;
+  border-radius: 12px;
+  color: white;
+  margin-left: 15px;
+  margin-right: 15px;
   
-  .resumeBuildContainer {
-    width: 500px;
-    height: auto;
-    padding: 20px;
-    background-color: black;
-    border-radius: 12px;
-    color: white;
-    display: flex;
-    flex-direction: column;
-    margin-left: 15px;
-    margin-right: 15px;
-  }
-  
-  .resumeBuildContainer h1 {
-    text-align: center;
-  }
-  
-  .resumeBuildContainer label {
-    font-size: 20px;
-  }
-  .resumeBuildContainer .question {
-    margin-top: 30px;
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .question input,
-  .question textarea {
-    font-size: 18px;
-    border: none;
-    border-radius: 2px;
-    padding: 5px;
-  }
-  
-  .question input {
-    height: 40px;
-  }
-  .question textarea {
-    height: 100px;
-  }
-  
-  .resumeBuildContainer button {
-    margin-top: 20px;
-    height: 40px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 18px;
-  }
+}
+
+.resumeBuildContainer h1 {
+  text-align: center;
+}
+
+.resumeBuildContainer label {
+  font-size: 20px;
+}
+.resumeBuildContainer .question {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+.question input,
+.question textarea {
+  font-size: 18px;
+  border: none;
+  border-radius: 2px;
+  padding: 5px;
+}
+
+.question input {
+  height: 40px;
+}
+.question textarea {
+  height: 100px;
+}
+
+.resumeBuildContainer button {
+  margin-top: 20px;
+  height: 40px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 18px;
+}
 
 
-  .DisplayResumePage {
-    width: 100%;
-    min-height: calc(100vh - 80px);
-    height: auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-top: 50px;
-    
-    
-  }
+.DisplayResumePage {
+  width: 100%;
+  min-height: calc(100vh - 80px);
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 50px;
   
-  .DisplayResumePage .resume {
-    width: 600px;
-    height: auto;
-    
-    background-color: white;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    margin: 20px;
-    padding: 20px;
-    border-radius: 15px;
-    
-  }
   
-  .resume .resumeHeader {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    
-    
-  }
+}
+
+.DisplayResumePage .resume {
+  width: 600px;
+  height: auto;
   
-
-
-  .FullName{
-    
-    border-bottom: 2px solid black;
-  }
-  .proSum{
-    border-bottom: 2px  solid black;
-    
-    
-  }
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  margin: 20px;
+  padding: 20px;
+  border-radius: 15px;
   
-  .title{
-    border-bottom: 2px  solid black;
-    font-size: 18px; 
-    flex: 50%; 
-  }
+}
 
-  body{
-    background-image: url("./imgs/trees.png");
-    background-position: bottom;
-    background-repeat: repeat-x;
-  }
+.resume .resumeHeader {
+  display: flex;
+  justify-content: center;
+  width: 100%;
   
+  
+}
 
- 
-  .resume .proSumTextContainer {
-    word-wrap: break-word;
-    height: auto;
-    max-height: 400px;
-    width: 100%;
-    overflow: hidden;
-    overflow-y: auto;
-    border-bottom: 2px  solid black;
 
-    
-  }
 
-  .test{
-    align-items: center;
-    justify-content: center;
-  }
+.FullName{
+  
+  border-bottom: 2px solid black;
+}
+.proSum{
+  border-bottom: 2px  solid black;
+  
+  
+}
+
+.title{
+  border-bottom: 2px  solid black;
+  font-size: 18px; 
+  flex: 50%; 
+}
+
+body{
+  background-image: url("./imgs/trees.png");
+  background-position: bottom;
+  background-repeat: repeat-x;
+}
+
+
+
+.resume .proSumTextContainer {
+  word-wrap: break-word;
+  height: auto;
+  max-height: 400px;
+  width: 100%;
+  overflow: hidden;
+  overflow-y: auto;
+  border-bottom: 2px  solid black;
+
+  
+}
+
+.test{
+  align-items: center;
+  justify-content: center;
+}

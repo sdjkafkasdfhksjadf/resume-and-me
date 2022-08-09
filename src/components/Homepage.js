@@ -14,9 +14,11 @@ export default function Homepage() {
 
   return (
     <div className='test'>
+      
       <h1>Welcome to Resume and Me </h1>
-      <Link class = "one" to="/ResumeBuilder" style={linkStyle}>Build Resume</Link>
-      <Link class = "two" to="/GetData" style={linkStyle}>GetData</Link>
+      <p>Select a template</p>
+      <Link class = "one" to="/BasicTemplateBuild" style={linkStyle}>Build Basic Resume</Link>
+      <Link class = "two" to="/CsTemplateBuild" style={linkStyle}>Build CS Resume</Link>
     </div>
   )
 }

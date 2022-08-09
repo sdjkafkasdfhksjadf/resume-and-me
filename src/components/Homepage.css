@@ -23,3 +23,21 @@
     display: inline-table;
     width: 165px;
 }
+
+.three{
+    border: solid;
+    padding: 30px;
+    text-align: center;
+    background-color:rgb(26, 156, 65);
+    color: white;
+    margin: auto;
+    display: inline-table;
+    width: 165px;
+}
+#signUpText {
+    border: solid 1px;
+    border-color:lightgrey;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: white;
+}

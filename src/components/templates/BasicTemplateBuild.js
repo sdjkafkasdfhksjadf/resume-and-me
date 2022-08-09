@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { addDoc, collection } from "firebase/firestore";
-import { db, auth } from "../firebase";
+import { db, auth } from "../../firebase";
 import { useNavigate } from "react-router-dom";
 
 function CreatePost() {
@@ -37,7 +37,7 @@ function CreatePost() {
 
   
 
-  const postsCollectionRef = collection(db, "ResumeHeaderInfo");
+  const postsCollectionRef = collection(db, "BasicTemplate");
   let navigate = useNavigate();
 
   const createPost = async () => {
@@ -67,7 +67,7 @@ function CreatePost() {
       award3,
       author: { id: auth.currentUser.uid }
     });
-    navigate("/ResumeDisplay");
+    navigate("/BasicTemplateDisplay");
     
   };
 
@@ -77,7 +77,8 @@ function CreatePost() {
     
     <div className="resumeBuildPage">
       <div className="resumeBuildContainer">
-        <h1>  header</h1>
+        <h1>  Header</h1>
+        <p>Questions can be left blank</p>
 
         <div className="question">
           <label> Name:</label>
@@ -120,11 +121,11 @@ function CreatePost() {
             }}
           />
         </div>
-        <button onClick={createPost}> Submit Post</button>
+        
         
       </div>
       <div className="resumeBuildContainer">
-        <h1> education</h1>
+        <h1> Education</h1>
 
         <div className="question">
           <label> School Name</label>
@@ -136,14 +137,14 @@ function CreatePost() {
           />
           <label> Degree</label>
           <input
-             placeholder="Name..."
+             placeholder="Degree..."
              onChange={(event) => {
                setDegree1(event.target.value);
              }}
           />
           <label> Graduated</label>
           <input
-             placeholder="Name..."
+             placeholder="XXXX-XXXX..."
              onChange={(event) => {
                setGraduated1(event.target.value);
              }}
@@ -160,21 +161,21 @@ function CreatePost() {
           />
           <label> Degree</label>
           <input
-             placeholder="Name..."
+             placeholder="Degree..."
              onChange={(event) => {
                setDegree2(event.target.value);
              }}
           />
           <label> Graduated</label>
           <input
-             placeholder="Name..."
+             placeholder="XXXX-XXXX..."
              onChange={(event) => {
                setGraduated2(event.target.value);
              }}
           />
         </div>
         
-        <button onClick={createPost}> Submit Post</button>
+        
         
       </div>
       <div className="resumeBuildContainer">
@@ -190,14 +191,14 @@ function CreatePost() {
           />
           <label> Time worked</label>
           <input
-             placeholder="Name..."
+             placeholder="XXXX-XXXX..."
              onChange={(event) => {
                setTimeWorked1(event.target.value);
              }}
           />
-          <label> Professional summary:</label>
+          <label> Description:</label>
           <textarea
-            placeholder="Professional summary:..."
+            placeholder="Description:..."
             onChange={(event) => {
               setDescription1(event.target.value);
             }}
@@ -214,21 +215,21 @@ function CreatePost() {
           />
           <label> Time worked</label>
           <input
-             placeholder="Name..."
+             placeholder="XXXX-XXXX..."
              onChange={(event) => {
                setTimeWorked2(event.target.value);
              }}
           />
-          <label> Professional summary:</label>
+          <label> Description:</label>
           <textarea
-            placeholder="Professional summary:..."
+            placeholder="Description:..."
             onChange={(event) => {
               setDescription2(event.target.value);
             }}
           />
         </div>
         
-        <button onClick={createPost}> Submit Post</button>
+        
         
       </div>
 
@@ -245,14 +246,14 @@ function CreatePost() {
           />
           <label> Skill 2</label>
           <input
-             placeholder="Name..."
+             placeholder="Describe..."
              onChange={(event) => {
                setSkill2(event.target.value);
              }}
           />
           <label> Skill 3</label>
           <input
-             placeholder="Name..."
+             placeholder="Describe..."
              onChange={(event) => {
                setSkill3(event.target.value);
              }}
@@ -262,21 +263,21 @@ function CreatePost() {
         <div className="question">
           <label> Award 1</label>
           <input
-             placeholder="Name..."
+             placeholder="Award Name..."
              onChange={(event) => {
                setAward1(event.target.value);
              }}
           />
           <label> Award2</label>
           <input
-             placeholder="Name..."
+             placeholder="Award Name..."
              onChange={(event) => {
                setAward2(event.target.value);
              }}
           />
           <label> Award 3</label>
           <input
-             placeholder="Name..."
+             placeholder="Award Name..."
              onChange={(event) => {
                setAward3(event.target.value);
              }}
