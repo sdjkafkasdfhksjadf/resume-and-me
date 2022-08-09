@@ -88,9 +88,9 @@ function CreatePost() {
                setName(event.target.value);
              }}
           />
-          <label> Adress:</label>
+          <label> Address:</label>
           <input
-             placeholder="Adress..."
+             placeholder="Address..."
              onChange={(event) => {
                setAdress(event.target.value);
              }}
