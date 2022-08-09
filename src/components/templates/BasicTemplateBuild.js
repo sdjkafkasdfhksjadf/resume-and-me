@@ -268,7 +268,7 @@ function CreatePost() {
                setAward1(event.target.value);
              }}
           />
-          <label> Award2</label>
+          <label> Award 2</label>
           <input
              placeholder="Award Name..."
              onChange={(event) => {
