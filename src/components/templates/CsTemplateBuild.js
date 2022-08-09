@@ -90,9 +90,9 @@ function CreatePost() {
                setName(event.target.value);
              }}
           />
-          <label> Adress:</label>
+          <label> Address:</label>
           <input
-             placeholder="Adress..."
+             placeholder="Address..."
              onChange={(event) => {
                setAdress(event.target.value);
              }}
@@ -115,14 +115,14 @@ function CreatePost() {
 
         
         <div className="question">
-          <label> Program Languages</label>
+          <label> Programming Languages</label>
           <input
              placeholder="C++/C/python..."
              onChange={(event) => {
                setProgramLang(event.target.value);
              }}
           />
-          <label> OS systems and Tools</label>
+          <label> OS Systems and Tools</label>
           <input
              placeholder="Unix/Bash, Linux, git..."
              onChange={(event) => {
@@ -141,7 +141,7 @@ function CreatePost() {
         
       </div>
       <div className="resumeBuildContainer">
-        <h1> education</h1>
+        <h1> Education</h1>
 
         <div className="question">
           <label> School Name</label>
@@ -229,7 +229,7 @@ function CreatePost() {
                setExperience2(event.target.value);
              }}
           />
-          <label> Time worked</label>
+          <label> Time Worked</label>
           <input
              placeholder="xxxx - xxxx..."
              onChange={(event) => {
