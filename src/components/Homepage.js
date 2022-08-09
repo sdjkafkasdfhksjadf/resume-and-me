@@ -13,13 +13,10 @@ const linkStyle = {
 export default function Homepage() {
 
   return (
-    <div>
+    <div className='test'>
       <h1>Welcome to Resume and Me </h1>
-      <div class = "div1" >
-        
-        <button class = "one"><Link to="/ResumeBuilder" style={linkStyle}>Build Resume</Link></button>
-        <button class = "two"><Link to="/GetData" style={linkStyle}>GetData</Link></button>
-      </div>
+      <Link class = "one" to="/ResumeBuilder" style={linkStyle}>Build Resume</Link>
+      <Link class = "two" to="/GetData" style={linkStyle}>GetData</Link>
     </div>
   )
 }

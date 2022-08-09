@@ -37,7 +37,7 @@ function ResumeDisplay({ isAuth }) {
   
   return (
     
-    <div className="homePage">
+    <div className="DisplayResumePage">
       {resumeLists.map((ResumeHeaderInfo) => {
         if(ResumeHeaderInfo.author.id === auth.currentUser.uid){
           return (

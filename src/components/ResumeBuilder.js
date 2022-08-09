@@ -78,11 +78,60 @@ function CreatePost() {
           />
         </div>
 
-
+        <div className="question">
+          <label> Professional summary:</label>
+          <textarea
+            placeholder="Professional summary:..."
+            onChange={(event) => {
+              setProSumm(event.target.value);
+            }}
+          />
+        </div>
+        <button onClick={createPost}> Submit Post</button>
         
+      </div>
+      <div className="resumeBuildContainer">
+        <h1>Create a resume header</h1>
 
+        <div className="question">
+          <label> Name:</label>
+          <input
+             placeholder="Name..."
+             onChange={(event) => {
+               setName(event.target.value);
+             }}
+          />
+        </div>
 
+        <div className="question">
+          <label> Adress:</label>
+          <input
+             placeholder="Adress..."
+             onChange={(event) => {
+               setAdress(event.target.value);
+             }}
+          />
+        </div>
 
+        <div className="question">
+          <label> Email:</label>
+          <input
+             placeholder="Email..."
+             onChange={(event) => {
+               setEmail(event.target.value);
+             }}
+          />
+        </div>
+
+        <div className="question">
+          <label> Number:</label>
+          <input
+             placeholder="Number..."
+             onChange={(event) => {
+               setNumber(event.target.value);
+             }}
+          />
+        </div>
 
         <div className="question">
           <label> Professional summary:</label>
@@ -91,14 +140,23 @@ function CreatePost() {
             onChange={(event) => {
               setProSumm(event.target.value);
             }}
-
-            
           />
         </div>
         <button onClick={createPost}> Submit Post</button>
         
       </div>
+
+
+
+
+
+      
+      
     </div> 
+
+    
+
+    
   );
 }
 
