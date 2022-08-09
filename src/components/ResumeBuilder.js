@@ -12,6 +12,29 @@ function CreatePost() {
   const [adress, setAdress] = useState("");
   const [email, setEmail] = useState("");
 
+
+  const [schoolName1, setSchoolName1] = useState("");
+  const [degree1, setDegree1] = useState("");
+  const [graduated1, setGraduated1] = useState("");
+  const [schoolName2, setSchoolName2] = useState("");
+  const [degree2, setDegree2] = useState("");
+  const [graduated2, setGraduated2] = useState("");
+
+  const [experience1, setExperience1] = useState("");
+  const [timeWorked1, setTimeWorked1] = useState("");
+  const [description1, setDescription1] = useState("");
+  const [experience2, setExperience2] = useState("");
+  const [timeWorked2, setTimeWorked2] = useState("");
+  const [description2, setDescription2] = useState("");
+
+
+  const [skil1, setSkill1] = useState("");
+  const [skil2, setSkill2] = useState("");
+  const [skil3, setSkill3] = useState("");
+  const [award1, setAward1] = useState("");
+  const [award2, setAward2] = useState("");
+  const [award3, setAward3] = useState("");
+
   
 
   const postsCollectionRef = collection(db, "ResumeHeaderInfo");
@@ -24,6 +47,24 @@ function CreatePost() {
       email,
       number,
       proSumm,
+      schoolName1,
+      degree1,
+      graduated1,
+      schoolName2,
+      degree2,
+      graduated2,
+      experience1,
+      timeWorked1,
+      description1,
+      experience2,
+      timeWorked2,
+      description2,
+      skil1,
+      skil2,
+      skil3,
+      award1,
+      award2,
+      award3,
       author: { id: auth.currentUser.uid }
     });
     navigate("/ResumeDisplay");
@@ -36,7 +77,7 @@ function CreatePost() {
     
     <div className="resumeBuildPage">
       <div className="resumeBuildContainer">
-        <h1>Create a resume header</h1>
+        <h1>  header</h1>
 
         <div className="question">
           <label> Name:</label>
@@ -46,9 +87,6 @@ function CreatePost() {
                setName(event.target.value);
              }}
           />
-        </div>
-
-        <div className="question">
           <label> Adress:</label>
           <input
              placeholder="Adress..."
@@ -56,9 +94,6 @@ function CreatePost() {
                setAdress(event.target.value);
              }}
           />
-        </div>
-
-        <div className="question">
           <label> Email:</label>
           <input
              placeholder="Email..."
@@ -66,9 +101,6 @@ function CreatePost() {
                setEmail(event.target.value);
              }}
           />
-        </div>
-
-        <div className="question">
           <label> Number:</label>
           <input
              placeholder="Number..."
@@ -78,6 +110,7 @@ function CreatePost() {
           />
         </div>
 
+        
         <div className="question">
           <label> Professional summary:</label>
           <textarea
@@ -91,60 +124,171 @@ function CreatePost() {
         
       </div>
       <div className="resumeBuildContainer">
-        <h1>Create a resume header</h1>
+        <h1> education</h1>
 
         <div className="question">
-          <label> Name:</label>
+          <label> School Name</label>
+          <input
+             placeholder="School Name..."
+             onChange={(event) => {
+               setSchoolName1(event.target.value);
+             }}
+          />
+          <label> Degree</label>
           <input
              placeholder="Name..."
              onChange={(event) => {
-               setName(event.target.value);
+               setDegree1(event.target.value);
              }}
           />
-        </div>
-
-        <div className="question">
-          <label> Adress:</label>
+          <label> Graduated</label>
           <input
-             placeholder="Adress..."
+             placeholder="Name..."
              onChange={(event) => {
-               setAdress(event.target.value);
+               setGraduated1(event.target.value);
              }}
           />
         </div>
 
         <div className="question">
-          <label> Email:</label>
+          <label> School Name</label>
           <input
-             placeholder="Email..."
+             placeholder="Name..."
              onChange={(event) => {
-               setEmail(event.target.value);
+               setSchoolName2(event.target.value);
              }}
           />
-        </div>
-
-        <div className="question">
-          <label> Number:</label>
+          <label> Degree</label>
           <input
-             placeholder="Number..."
+             placeholder="Name..."
              onChange={(event) => {
-               setNumber(event.target.value);
+               setDegree2(event.target.value);
+             }}
+          />
+          <label> Graduated</label>
+          <input
+             placeholder="Name..."
+             onChange={(event) => {
+               setGraduated2(event.target.value);
              }}
           />
         </div>
+        
+        <button onClick={createPost}> Submit Post</button>
+        
+      </div>
+      <div className="resumeBuildContainer">
+        <h1> Experience</h1>
 
         <div className="question">
+          <label> Name of Experience</label>
+          <input
+             placeholder="Name..."
+             onChange={(event) => {
+               setExperience1(event.target.value);
+             }}
+          />
+          <label> Time worked</label>
+          <input
+             placeholder="Name..."
+             onChange={(event) => {
+               setTimeWorked1(event.target.value);
+             }}
+          />
           <label> Professional summary:</label>
           <textarea
             placeholder="Professional summary:..."
             onChange={(event) => {
-              setProSumm(event.target.value);
+              setDescription1(event.target.value);
             }}
           />
         </div>
+
+        <div className="question">
+          <label> Name of Experience</label>
+          <input
+             placeholder="Name..."
+             onChange={(event) => {
+               setExperience2(event.target.value);
+             }}
+          />
+          <label> Time worked</label>
+          <input
+             placeholder="Name..."
+             onChange={(event) => {
+               setTimeWorked2(event.target.value);
+             }}
+          />
+          <label> Professional summary:</label>
+          <textarea
+            placeholder="Professional summary:..."
+            onChange={(event) => {
+              setDescription2(event.target.value);
+            }}
+          />
+        </div>
+        
         <button onClick={createPost}> Submit Post</button>
         
       </div>
+
+      <div className="resumeBuildContainer">
+        <h1>Awards/Skills</h1>
+
+        <div className="question">
+          <label> Skill 1</label>
+          <input
+             placeholder="Name..."
+             onChange={(event) => {
+               setSkill1(event.target.value);
+             }}
+          />
+          <label> Skill 2</label>
+          <input
+             placeholder="Name..."
+             onChange={(event) => {
+               setSkill2(event.target.value);
+             }}
+          />
+          <label> Skill 3</label>
+          <input
+             placeholder="Name..."
+             onChange={(event) => {
+               setSkill3(event.target.value);
+             }}
+          />
+        </div>
+
+        <div className="question">
+          <label> Award 1</label>
+          <input
+             placeholder="Name..."
+             onChange={(event) => {
+               setAward1(event.target.value);
+             }}
+          />
+          <label> Award2</label>
+          <input
+             placeholder="Name..."
+             onChange={(event) => {
+               setAward2(event.target.value);
+             }}
+          />
+          <label> Award 3</label>
+          <input
+             placeholder="Name..."
+             onChange={(event) => {
+               setAward3(event.target.value);
+             }}
+          />
+        </div>
+        
+        <button onClick={createPost}> Submit Post</button>
+        
+      </div>
+      
+
+      
 
 
 

@@ -1,0 +1,14 @@
+.cname{
+    margin-bottom: 10px;
+}
+.cemail{
+    margin-bottom: 10px;
+}
+#cmessage{
+    width: 359px;
+}
+#cform{
+    border: solid 1px black;
+    padding: 20px;
+    background-color: white;
+}

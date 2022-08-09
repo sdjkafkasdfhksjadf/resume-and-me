@@ -1,7 +1,7 @@
 .resumeBuildPage {
     width: 100%;
     height: calc(100vh - 80px);
-    display: inline-table;
+    display: flex;
     place-items: center;
   }
   
@@ -14,6 +14,8 @@
     color: white;
     display: flex;
     flex-direction: column;
+    margin-left: 15px;
+    margin-right: 15px;
   }
   
   .resumeBuildContainer h1 {
@@ -41,7 +43,7 @@
     height: 40px;
   }
   .question textarea {
-    height: 150px;
+    height: 100px;
   }
   
   .resumeBuildContainer button {
@@ -69,7 +71,7 @@
   .DisplayResumePage .resume {
     width: 600px;
     height: auto;
-    max-height: 600px;
+    
     background-color: white;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     margin: 20px;
@@ -119,6 +121,8 @@
     width: 100%;
     overflow: hidden;
     overflow-y: auto;
+    border-bottom: 2px  solid black;
+
     
   }
 
