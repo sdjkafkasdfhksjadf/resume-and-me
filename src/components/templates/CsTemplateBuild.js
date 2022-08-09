@@ -79,7 +79,7 @@ function CreatePost() {
     
     <div className="resumeBuildPage">
       <div className="resumeBuildContainer">
-        <h1>  header</h1>
+        <h1>  Header</h1>
         <p>Questions can be left blank</p>
 
         <div className="question">
