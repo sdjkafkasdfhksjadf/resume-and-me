@@ -26,7 +26,7 @@ export default function Signup() {
             
             
         }catch{
-            setError('Failed to create account')
+            setError('Failed to create account, Password Must be at least 6 letters')
         }
         setLoading(false)
     }

@@ -99,7 +99,7 @@ function ResumeDisplay({ isAuth }) {
                       deletePost(ResumeHeaderInfo.id);
                     }}
                   >
-                    Delete Post
+                    Delete Resume
                   </button>
                 )}
               </div>

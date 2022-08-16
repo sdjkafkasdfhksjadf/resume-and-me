@@ -1,6 +1,7 @@
 
 .test{
     text-align: center;
+    height: 250px;
 }
 .one{
     border: solid;
@@ -12,16 +13,6 @@
     display: inline-table;
     width: 165px;
 
-}
-.two{
-    border: solid;
-    padding: 30px;
-    text-align: center;
-    background-color:dodgerblue;
-    color: white;
-    margin: auto;
-    display: inline-table;
-    width: 165px;
 }
 
 .three{

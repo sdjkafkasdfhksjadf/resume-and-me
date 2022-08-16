@@ -13,10 +13,10 @@ export default function Homepage() {
     <div className='test'>
       
       <h1>Welcome to Resume and Me </h1>
-      <p>Select a template</p>
+      
        {/*<Link class = "one" to="/BasicTemplateBuild" style={linkStyle}>Build Basic Resume</Link>
       <Link class = "two" to="/CsTemplateBuild" style={linkStyle}>Build CS Resume</Link>*/}
-      <DropdownButton id="dropdown-basic-button" title="Dropdown button" size="lg">
+      <DropdownButton id="dropdown-basic-button" title="Select a Template" size="lg">
       <Dropdown.Item as={Link} to="/PreviewBasic">Build Basic Resume</Dropdown.Item>
       <Dropdown.Item as={Link} to="/PreviewCS">Build CS Resume</Dropdown.Item>
       
