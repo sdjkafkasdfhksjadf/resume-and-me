@@ -130,3 +130,23 @@ body{
   align-items: center;
   justify-content: center;
 }
+
+.deletePost{
+  border: none;
+  
+  background: none;
+  font-size: 25px;
+  cursor: pointer;
+}
+
+.PreviewSize{
+  height: 500px;
+  width: 400px;
+  
+}
+
+.PreviewPage{
+  width: 100%;
+  text-align: center;
+  align-items:center;
+}

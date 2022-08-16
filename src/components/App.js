@@ -9,7 +9,7 @@ import "./app.css";
 import Homepage from "./Homepage"
 import Login from "./Login"
 import Contact from "./Contact"
-import GetData from "./GetData";
+
 import BasicTemplateDisplay from "./templates/BasicTemplateDisplay"
 import PrivateRoute from "./PrivateRoute";
 import BasicTemplateBuild from "./templates/BasicTemplateBuild";
@@ -17,6 +17,8 @@ import DisplayMainPage from "./DisplayMainPage";
 import CsTemplateBuild from "./templates/CsTemplateBuild";
 import CsTemplateDisplay from "./templates/CsTemplateDisplay";
 import ProfilePage from "./ProfilePage"
+import PreviewBasic from "./PreviewBasic"
+import PreviewCS from "./PreviewCS"
 
 
 
@@ -47,9 +49,11 @@ function App() {
                   <NavBar.Brand hfref= "Navibar">Resume and Me</NavBar.Brand>
                     <Nav>
                       <Nav.Link href = "/Homepage">Homepage</Nav.Link>
-                      <Nav.Link href = "/ProfilePage">Profile/Logout</Nav.Link>
+                      
                       <Nav.Link href = "/DisplayMainPage">Resumes</Nav.Link>
                       <Nav.Link href = "/Contact">Contact</Nav.Link>
+                      <Nav.Link href = "/ProfilePage">Account</Nav.Link>
+                      
                     </Nav>
                 </Container>
               </NavBar>
@@ -61,11 +65,12 @@ function App() {
                   <Route path = "/Contact" element = {<Contact/>}/>
                   <Route path = "/Homepage" element = {<Homepage/>}/>
                   <Route path = "/BasicTemplateDisplay" element = {<BasicTemplateDisplay/>}/>
-                  <Route path = "/GetData" element = {<GetData/>}/>
+                  
                   <Route path = "/DisplayMainPage" element = {<DisplayMainPage/>}/>
                   <Route path = "/CsTemplateBuild" element = {<CsTemplateBuild/>}/>
                   <Route path = "/CsTemplateDisplay" element = {<CsTemplateDisplay/>}/>
-                  
+                  <Route path = "/PreviewBasic" element = {<PreviewBasic/>}/>
+                  <Route path = "/PreviewCS" element = {<PreviewCS/>}/>
                 </Route>
                 <Route path ="/signup" element= {<Signup/>}/>
                 <Route path ="/" element = {<Login/>}/>
